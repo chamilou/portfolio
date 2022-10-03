@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 5px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Lato Black";
+    src: url('698242188-Lato-Bla.eot');
+    src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'), url('698242188-Lato-Bla.svg#Lato Black') format('svg'), url('698242188-Lato-Bla.woff') format('woff'), url('698242188-Lato-Bla.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "h h h h" "m m m m" "m m m m" "m m m m" "f f f f";
+}
+
+.ipsum {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+header {
+    grid-area: h;
+    width: 100%;
+    position: fixed;
+    background-color: bisque;
+    display: flex;
+    margin: 5px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 26px;
+}
+
+nav li {
+    display: inline;
+}
+
+main {
+    grid-area: m;
+    margin: 0;
+    background-color: rgb(204, 218, 12);
+}
+
+section {
+    display: flex;
+}
+
+aside {
+    width: 35%;
+    justify-content: center;
+    grid-row-start: end;
+}
+
+aside a {
+    background-color: bisque;
+    text-decoration: none;
+}
+
+footer {
+    grid-area: f;
+    margin-top: 80%;
+    background-color: blueviolet;
+}
+
+form li {
+    display: block;
+    justify-items: flex-end;
+    background-color: blueviolet;
+}
