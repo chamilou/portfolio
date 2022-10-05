@@ -76,7 +76,11 @@ footer {
 }
 
 form li {
-    display: block;
+    display: inline;
     justify-items: flex-end;
     background-color: blueviolet;
+}
+
+ul {
+    list-style-type: none;
 }
