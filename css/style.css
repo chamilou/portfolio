@@ -52,6 +52,15 @@ positioning the wrapper for the hamburger */
     z-index: 5;
 }
 
+.nextPage a {
+    text-decoration: none;
+}
+
+.nextPage {
+    background-color: #dae10a;
+    color: white;
+}
+
 
 /* style the 3 bars of the icon, 2 come from the label, 2 from the span */
 

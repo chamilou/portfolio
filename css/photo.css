@@ -14,6 +14,10 @@ figure {
     text-align: left;
 }
 
+figure img {
+    margin: 10px;
+}
+
 @media only screen and (min-width: 30.938em) {
     #photoSection {
         grid-template-columns: 1fr 1fr;
