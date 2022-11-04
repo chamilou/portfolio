@@ -1,0 +1,48 @@
+.galery-article {
+    display: flex;
+    align-content: flex-end;
+}
+
+#countryList {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    /* background-color: blue; */
+    padding: 5px;
+    cursor: pointer;
+}
+
+#photoContainer {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figcapture a {
+    text-decoration: none;
+    font-size: large;
+    font-variant: small-caps;
+    color: black;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media(min-width:800px) {
+    #countryList {
+        display: flex;
+    }
+    section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+}

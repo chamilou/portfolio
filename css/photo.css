@@ -1,0 +1,21 @@
+#photoSection {
+    font-size: 2rem;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 1rem;
+}
+
+figure {
+    text-align: left;
+}
+
+@media only screen and (min-width: 30.938em) {
+    #photoSection {
+        grid-template-columns: 1fr 1fr;
+    }
+}

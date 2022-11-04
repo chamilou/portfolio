@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="keywords">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/resistor.css" type="text/css">
+    <title>Welcome</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Header-->
+        <header id="mainHeader">
+
+            <input type="checkbox" id="nav-trigger" class="trigger">
+            <label for="nav-trigger" onclick=""><span></span></label>
+            <nav>
+                <img src="media/icons/Blue-Robot.png" alt="car" height="50">
+
+                <h1><a href="index.html"> My Hobbies</a></h1>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="galery.html">Galery</a>
+                    </li>
+                    <li>
+                        <a href="resistor.html" class="active">Radio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Main section-->
+        <main>
+            <h1>It's all about Transistor!</h1>
+            <!--This section about myself and hobbies-->
+            <h6>Please be aware it is not working properly and differ from real values</h6>
+            <div class="radioPieces">
+                <fieldset>
+                    <legend>Resistor</legend>
+
+                    <div id="resistorContainer">
+                        <div class="contact" id="contact"></div>
+                        <div class="stripes" id="head1"></div>
+                        <div class="stripes" id="color1"></div>
+                        <div class="stripes" id="color2"></div>
+                        <div class="stripes" id="color3"></div>
+                        <div class="stripes" id="color4"></div>
+                        <div class="stripes" id="head2"></div>
+                        <div class="contact" id="contact"></div>
+                        <div class="readingContainer">
+                            <input type="text" id="reading1" list="colorList">
+                            <input type="text" id="reading2" list="colorList">
+                            <input type="text" id="reading3" list="colorList">
+                            <input type="text" id="reading4" list="colorList">
+                            <input type="text" id="reading5" list="colorList">
+                            <input type="text" id="reading6" list="colorList">
+                            <datalist id="colorList">
+                <option value="Black"></option>
+                <option value="Brown"></option>
+                <option value="Red"></option>
+                <option value="Orange"></option>
+                <option value="Yellow"></option>
+                <option value="Green"></option>
+                <option value="Blue"></option>
+                <option value="Violet"></option>
+                <option value="Grey"></option>
+                <option value="White"></option>
+                <option value="Gold"></option>
+                <option value="Silver"></option>
+
+            </datalist>
+                        </div>
+                        <input id="but" type="submit" value="Calc" onclick="choseColor()">
+                    </div>
+                    <figure>
+                        <img src="media/SitePictures/resistor.png" alt="" width="150">
+                        <figcaption>Credit:https://electrical4u.com</figcaption>
+                        <div id="calcResult">
+                            <input type="text" id="resistorData" placeholder="Om Ω">
+                        </div>
+                    </figure>
+                </fieldset>
+                <fieldset>
+                    <legend>Transistor</legend>
+                    <div id="transistorContainer">
+                        <div id=transistorBody>PNP102K</div>
+                        <div id=transistorLegPart1></div>
+                        <div id=transistorLegPart2></div>
+                        <div id=transistorLegPart3></div>
+                        <div id=transistorLegCenter></div>
+
+
+                    </div>
+                    <figure>
+                        <img src="media/SitePictures/NPN-Transistor.png" alt="picture of NPN Transistor" width="150">
+                        <figcaption> Credit: https://electricaltechnology.org</figcaption>
+                    </figure>
+                </fieldset>
+                <fieldset>
+                    <legend>Diod</legend>
+                    <div id="resistorContainer">
+                        <div class="contact" id="contact"></div>
+                        <div class="rectangle1"></div>
+                        <div class="rectangle2"></div>
+                        <div class="rectangle3"></div>
+                        <div class="rectangle4"></div>
+                        <div class="ball1"></div>
+                        <div class="ball"></div>
+                        <div class="contact" id="contact"></div>
+                    </div>
+                    <figure>
+                        <img src="media/SitePictures/diode.jpeg" alt="type of diodes" width="150">
+                        <figcaption>Credit: https://www.electricaltechnology.org</figcaption>
+                    </figure>
+                </fieldset>
+                <fieldset>
+                    <legend>Capacitor</legend>
+                    <div id="capacitorContainer">
+
+
+                        <div id="oval"></div>
+
+                        <div id="vertLine3"></div>
+                        <div id="plus1"></div>
+                        <div id="plus2"></div>
+                        <div id="vertLine1"></div>
+                        <div id="vertLine2"></div>
+                        <div id="vertLine4"></div>
+                        <div id="oval2"></div>
+                        <div id="capacitorContact"></div>
+
+
+
+
+                    </div>
+                    <figure>
+                        <img src="media/SitePictures/Capacitors.jpeg" alt="capacitors" width="150">
+                        <figcaption>Credit:https://en.wikipedia.org</figcaption>
+                    </figure>
+                </fieldset>
+
+            </div>
+
+        </main>
+    </div>
+    <footer>
+        <p>&copy; All right reserved*2022*</p>
+    </footer>
+    <script src="js/resistor.js"></script>
+</body>
+
+</html>

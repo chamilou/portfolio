@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Welcome</title>
-    <link type='text/css' href='http://fonts.googleapis.com/css?family=Lato:400,700' />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 
@@ -15,82 +15,82 @@
     <div class="container">
 
         <!--Header-->
-        <header>
-            <img src="/images/maxresdefault.svg" alt="car" width="70">
-            <h1>My Hobbies</h1>
-            <!--Navigation and Menu-->
+        <header id="mainHeader">
+
+            <input type="checkbox" id="nav-trigger" class="trigger">
+            <label for="nav-trigger" onclick=""><span></span></label>
             <nav>
+                <img src="media/icons/Blue-Robot.png" alt="car" height="50">
+
+                <h1><a href="index.html"> My Hobbies</a></h1>
                 <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="test.html">Test</a></li>
-                    <li><a href="forms.html">Forms</a></li>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="galery.html">Galery</a>
+                    </li>
+                    <li>
+                        <a href="resistor.html">Radio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </nav>
-
         </header>
+
         <!--Main section-->
         <main>
+            <h1>It's all about passion!</h1>
             <!--This section about myself and hobbies-->
-            <section>
-                <h2>My Hobbies</h2>
-                <img src="" alt="">
-                <a href="contact.html#input">jump to...</a>
-                <h4> Why I like this...</h4>
-                <p id="hobby1">
-                    Photography is the way to freeze the time, unlike in <em>sci-fi</em> movie we are not in control of time and not possible to forward or backward our timeline, unless we have photographs
-                </p>
+            <div class="sections">
+                <section class="section1">
+                    <h2> Photography</h2>
+                    <img src="/media/camera.png" width="150" alt="photography">
+                    <article>
+                        <h3>
+                            Why I like the photography?
+                        </h3>
+                        <p>
+                            The photography is the greatest invention of our civilization. Recent years photography perhaps lost a bit of its mystery and storytelling, because it became widely accessible, majority of people have a camera, and more and more of a good quality. It’s
+                            just in our pockets and it is not only accessible any time, but we cannot imagine modern life without it! And if the first film cameras were requiring special skills and investment for Film, chemical reactive, lab equipment,
+                            today it is easy point and push, point and push! If you don`t like it just delete it and take again. It is rather rare to see the families using the service of professional photographers in nowadays but it is was not the case
+                            even couple decades ago. It was remarkable event for whole family visiting the studio or inviting the famous photograph home... The analog camera are replaced by digital, but the principle of taking pictures are inherited and
+                            are exactly the same as 100 years ago. If you are still curious how and why push the button and read further...
 
-                <p>About Photography</p>
-                <p>About Raspberry Pi</p>
-                <p>About Arduino</p>
-            </section>
-            <aside class="links">
-                <h3>Usefull links and reading</h3>
-                <ul>
-                    <li>
-                        <a href="/resources/magazins.html">Magazins</a>
-                    </li>
-                    <li>
-                        <a href="/resources/blogs.html">Blogs</a>
-                    </li>
-                    <li>
-                        <a href="/resources/sites.html">Sites</a>
-                    </li>
-                    <li>
-                        <a href="/resources/books.html">Books</a>
-                    </li>
-                </ul>
+                            <button class="nextPage"><a href="photo.html"> >>></a></button>
+                        </p>
+                    </article>
+                </section>
 
-            </aside>
-            <section class="ipsum">
-                <p>
-                    <strong>
+                <section class="section2">
+                    <h2>Arduino</h2>
+                    <img src="media/arduino-uno-board.png" width="150" alt="arduino">
+                    <article>
+                        <h3>What is about anyway?</h3>
+                        <p>I'm sure you did hear talking about Arduino! So what does it? What does it? Arduino is open source electronics platform based on hardware and software wich are simple to use and program. In other words Arduino is microcontroller
+                            based on <i>ATMEGA</i> chip. This chip has tiny size but has bigger hidden capacity. Better call it - microcontroller. It has has an in and out entries or pins. And it can control in and out flow based on a piece of software
+                            which can be manipulated by us, users! Taking very basic example: you got a ticket and perfect time for your holidays but you have a flower which require regualr watering! You can of course bring it to your friends with a taxi,
+                            but better buy a Arduino with a couple of sensors and small water pump, and it can take care of your flower even when you are back, or an another example: build your perfect weather station on your balcony, icluding the air
+                            polution meter? How ? Is it affordable? how Arduino can become our best friend,and where to buy, further…
 
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    </strong> sed do eiusmod tempor <em>
+                            <button class="nextPage"><a href="arduino.html"> >>></a></button>
+                        </p>
 
-                         incididunt ut labore et dolore magna aliqua. 
-                        </em> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-            </section>
-
+                    </article>
+                </section>
+            </div>
             <!--End of main section-->
-            <footer>
-                <p>&copy; All right reserved*2022*</p>
-            </footer>
         </main>
-
     </div>
+    <footer>
+        <p>&copy; All right reserved*2022*</p>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
