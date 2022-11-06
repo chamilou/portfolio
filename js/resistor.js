@@ -8,6 +8,15 @@ let colorReading2 = document.getElementById("reading2").addEventListener("change
 let colorReading3 = document.getElementById("reading3").addEventListener("change", addColor);
 let colorReading4 = document.getElementById("reading4").addEventListener("change", addColor);
 
+document.getElementById("reading1").addEventListener("focus", () => {
+    reading1.value = '';
+});
+
+document.getElementById("formcalc").addEventListener("submit", (event) => {
+    event.preventDefault();
+    choseColor();
+});
+
 
 let resValue = [
     ["black", 0],

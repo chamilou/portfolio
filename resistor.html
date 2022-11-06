@@ -32,7 +32,7 @@
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="galery.html">Galery</a>
+                        <a href="galery.html">Gallery</a>
                     </li>
                     <li>
                         <a href="resistor.html" class="active">Radio</a>
@@ -50,26 +50,27 @@
             <!--This section about myself and hobbies-->
             <h6>Please be aware it is not working properly and differ from real values</h6>
             <div class="radioPieces">
-                <fieldset>
-                    <legend>Resistor</legend>
+                <form id="formcalc">
+                    <fieldset>
+                        <legend>Resistor</legend>
 
-                    <div id="resistorContainer">
-                        <div class="contact" id="contact"></div>
-                        <div class="stripes" id="head1"></div>
-                        <div class="stripes" id="color1"></div>
-                        <div class="stripes" id="color2"></div>
-                        <div class="stripes" id="color3"></div>
-                        <div class="stripes" id="color4"></div>
-                        <div class="stripes" id="head2"></div>
-                        <div class="contact" id="contact"></div>
-                        <div class="readingContainer">
-                            <input type="text" id="reading1" list="colorList">
-                            <input type="text" id="reading2" list="colorList">
-                            <input type="text" id="reading3" list="colorList">
-                            <input type="text" id="reading4" list="colorList">
-                            <input type="text" id="reading5" list="colorList">
-                            <input type="text" id="reading6" list="colorList">
-                            <datalist id="colorList">
+                        <div id="resistorContainer">
+                            <div class="contact" id="contact"></div>
+                            <div class="stripes" id="head1"></div>
+                            <div class="stripes" id="color1"></div>
+                            <div class="stripes" id="color2"></div>
+                            <div class="stripes" id="color3"></div>
+                            <div class="stripes" id="color4"></div>
+                            <div class="stripes" id="head2"></div>
+                            <div class="contact" id="contact"></div>
+                            <div class="readingContainer">
+                                <input type="text" id="reading1" list="colorList">
+                                <input type="text" id="reading2" list="colorList">
+                                <input type="text" id="reading3" list="colorList">
+                                <input type="text" id="reading4" list="colorList">
+                                <input type="text" id="reading5" list="colorList">
+                                <input type="text" id="reading6" list="colorList">
+                                <datalist id="colorList">
                 <option value="Black"></option>
                 <option value="Brown"></option>
                 <option value="Red"></option>
@@ -84,16 +85,17 @@
                 <option value="Silver"></option>
 
             </datalist>
-                        </div>
-                        <input id="but" type="submit" value="Calc" onclick="choseColor()">
+                            </div>
+                            <input id="but" type="submit" value="Calc" onclick="choseColor()">
+                </form>
+                </div>
+                <figure>
+                    <img src="media/SitePictures/resistor.png" alt="" width="150">
+                    <figcaption>Credit:https://electrical4u.com</figcaption>
+                    <div id="calcResult">
+                        <input type="text" id="resistorData" placeholder="Om Ω">
                     </div>
-                    <figure>
-                        <img src="media/SitePictures/resistor.png" alt="" width="150">
-                        <figcaption>Credit:https://electrical4u.com</figcaption>
-                        <div id="calcResult">
-                            <input type="text" id="resistorData" placeholder="Om Ω">
-                        </div>
-                    </figure>
+                </figure>
                 </fieldset>
                 <fieldset>
                     <legend>Transistor</legend>

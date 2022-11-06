@@ -43,32 +43,36 @@ let photoArray = [
 
 
 let galeryContainer = document.getElementById("photoContainer")
-let img = document.createElement("img");
+    // let img = document.createElement("img");
 
 
 // let mergedArray = [...photoArray, ...thumbs];
 // console.log(mergedArray)
-let section = document.createElement("section")
+
+let section = document.createElement("section");
+
+let article = document.createElement("article")
+let a = document.createElement("a");
+let figure = document.createElement("figure");
+let figcapture = document.createElement("figcapture")
+let img = document.createElement("img");
+figure.appendChild(img)
+figcapture.appendChild(a)
+figure.appendChild(figcapture)
+img.setAttribute('width', 250)
+img.setAttribute('class', 'galImg')
+article.setAttribute('class', 'galery-article')
+article.appendChild(figure)
+
 for (let i = 0; i < photoArray.length; i++) {
-    let article = document.createElement("article")
-    section.setAttribute('class', 'galSection')
-    let a = document.createElement("a");
-    a.setAttribute("href", bigPicture(photoArray))
-    let figure = document.createElement("figure");
-    let figcapture = document.createElement("figcapture")
-    let img = document.createElement("img");
-    figure.appendChild(img)
-    a.innerHTML = photoArray[i][2];
-    figcapture.appendChild(a)
-    figure.appendChild(figcapture)
-    img.setAttribute('width', 250)
-    img.setAttribute('class', 'galImg')
-    galeryContainer.appendChild(section)
-    article.setAttribute('class', 'galery-article')
-    article.appendChild(figure)
-    img.setAttribute('src', photoArray[i][1])
-    section.appendChild(article)
+    let newArticle = article.cloneNode(true);
+    newArticle.querySelector('a').setAttribute("href", photoArray[i][0]);
+    newArticle.querySelector('a').innerHTML = photoArray[i][2];
+    newArticle.querySelector('img').setAttribute('src', photoArray[i][1]);
+    section.appendChild(newArticle);
 }
+galeryContainer.appendChild(section)
+
 let greece = document.getElementById("greece").addEventListener('click', () => { filter("greece") })
 let ukraine = document.getElementById("ukraine").addEventListener('click', () => { filter("ukraine") })
 let iraq = document.getElementById("iraq").addEventListener('click', () => { filter("iraq") })
@@ -96,14 +100,14 @@ function filter(country = null) {
 
         if (country == null || photoArray[i][2] == country) {
             let img = document.createElement("img");
-            img.setAttribute('src', photoArray[i][0])
+            img.setAttribute('src', photoArray[i][1])
             let a = document.createElement("a");
             let article = document.createElement("article")
             let figure = document.createElement("figure");
             let figcapture = document.createElement("figcapture")
                 // let newArray [i, ...uganda]=photoArray
                 // section.setAttribute('class', 'galSection')
-            a.setAttribute("href", bigPicture)
+            a.setAttribute("href", photoArray[i][0])
             a.innerHTML = photoArray[i][2];
             img.setAttribute('class', 'galImg')
             img.setAttribute('width', 400)
