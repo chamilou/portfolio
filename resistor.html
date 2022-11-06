@@ -50,52 +50,52 @@
             <!--This section about myself and hobbies-->
             <h6>Please be aware it is not working properly and differ from real values</h6>
             <div class="radioPieces">
-                <form id="formcalc">
-                    <fieldset>
-                        <legend>Resistor</legend>
+                <fieldset>
+                    <legend>Resistor</legend>
 
-                        <div id="resistorContainer">
-                            <div class="contact" id="contact"></div>
-                            <div class="stripes" id="head1"></div>
-                            <div class="stripes" id="color1"></div>
-                            <div class="stripes" id="color2"></div>
-                            <div class="stripes" id="color3"></div>
-                            <div class="stripes" id="color4"></div>
-                            <div class="stripes" id="head2"></div>
-                            <div class="contact" id="contact"></div>
-                            <div class="readingContainer">
-                                <input type="text" id="reading1" list="colorList">
-                                <input type="text" id="reading2" list="colorList">
-                                <input type="text" id="reading3" list="colorList">
-                                <input type="text" id="reading4" list="colorList">
-                                <input type="text" id="reading5" list="colorList">
-                                <input type="text" id="reading6" list="colorList">
-                                <datalist id="colorList">
-                <option value="Black"></option>
-                <option value="Brown"></option>
-                <option value="Red"></option>
-                <option value="Orange"></option>
-                <option value="Yellow"></option>
-                <option value="Green"></option>
-                <option value="Blue"></option>
-                <option value="Violet"></option>
-                <option value="Grey"></option>
-                <option value="White"></option>
-                <option value="Gold"></option>
-                <option value="Silver"></option>
-
-            </datalist>
-                            </div>
-                            <input id="but" type="submit" value="Calc" onclick="choseColor()">
-                </form>
-                </div>
-                <figure>
-                    <img src="media/SitePictures/resistor.png" alt="" width="150">
-                    <figcaption>Credit:https://electrical4u.com</figcaption>
-                    <div id="calcResult">
-                        <input type="text" id="resistorData" placeholder="Om Ω">
+                    <div id="resistorContainer">
+                        <div class="contact" id="contact"></div>
+                        <div class="stripes" id="head1"></div>
+                        <div class="stripes" id="color1"></div>
+                        <div class="stripes" id="color2"></div>
+                        <div class="stripes" id="color3"></div>
+                        <div class="stripes" id="color4"></div>
+                        <div class="stripes" id="head2"></div>
+                        <div class="contact" id="contact"></div>
+                        <div class="readingContainer">
+                            <input type="text" id="reading1" list="colorList">
+                            <input type="text" id="reading2" list="colorList">
+                            <input type="text" id="reading3" list="colorList">
+                            <input type="text" id="reading4" list="colorList">
+                            <input type="text" id="reading5" list="colorList">
+                            <input type="text" id="reading6" list="colorList">
+                            <form id="formcalc">
+                                <input id="but" type="submit" value="Calc" onclick="choseColor()">
+                            </form>
+                        </div>
+                        <datalist id="colorList">
+                            <option value="Black"></option>
+                            <option value="Brown"></option>
+                            <option value="Red"></option>
+                            <option value="Orange"></option>
+                            <option value="Yellow"></option>
+                            <option value="Green"></option>
+                            <option value="Blue"></option>
+                            <option value="Violet"></option>
+                            <option value="Grey"></option>
+                            <option value="White"></option>
+                            <option value="Gold"></option>
+                            <option value="Silver"></option>
+                            
+                        </datalist>
                     </div>
-                </figure>
+                    <figure>
+                        <img src="media/SitePictures/resistor.png" alt="" width="150">
+                        <figcaption>Credit:https://electrical4u.com</figcaption>
+                        <div id="calcResult">
+                            <input type="text" id="resistorData" placeholder="Om Ω">
+                        </div>
+                    </figure>
                 </fieldset>
                 <fieldset>
                     <legend>Transistor</legend>
@@ -115,7 +115,7 @@
                 </fieldset>
                 <fieldset>
                     <legend>Diod</legend>
-                    <div id="resistorContainer">
+                    <div id="diodContainer">
                         <div class="contact" id="contact"></div>
                         <div class="rectangle1"></div>
                         <div class="rectangle2"></div>

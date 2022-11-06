@@ -54,10 +54,14 @@ let section = document.createElement("section");
 let article = document.createElement("article")
 let a = document.createElement("a");
 let figure = document.createElement("figure");
+let a_figure = document.createElement("a")
 let figcapture = document.createElement("figcapture")
 let img = document.createElement("img");
+// a_figure.setAttribute("href", photoArray[i][0])
+
 figure.appendChild(img)
 figcapture.appendChild(a)
+    // a_figure.appendChild(figure)
 figure.appendChild(figcapture)
 img.setAttribute('width', 250)
 img.setAttribute('class', 'galImg')
@@ -67,7 +71,7 @@ article.appendChild(figure)
 for (let i = 0; i < photoArray.length; i++) {
     let newArticle = article.cloneNode(true);
     newArticle.querySelector('a').setAttribute("href", photoArray[i][0]);
-    newArticle.querySelector('a').innerHTML = photoArray[i][2];
+    newArticle.querySelector('a').innerHTML = photoArray[i][2] + "-->Click for HD res";
     newArticle.querySelector('img').setAttribute('src', photoArray[i][1]);
     section.appendChild(newArticle);
 }
@@ -108,7 +112,7 @@ function filter(country = null) {
                 // let newArray [i, ...uganda]=photoArray
                 // section.setAttribute('class', 'galSection')
             a.setAttribute("href", photoArray[i][0])
-            a.innerHTML = photoArray[i][2];
+            a.innerHTML = photoArray[i][2] + "-->Click for HD res";
             img.setAttribute('class', 'galImg')
             img.setAttribute('width', 400)
             article.setAttribute('class', 'galery-article')

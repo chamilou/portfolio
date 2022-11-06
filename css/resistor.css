@@ -1,39 +1,44 @@
 #resistorContainer {
     display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: start;
     align-content: center;
-    flex-wrap: wrap;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     background-color: rgb(94, 121, 5);
     align-items: center;
 }
 
 fieldset {
     display: flex;
+    width: 1vw;
+    /* grid-template-columns: 1fr; */
     flex-direction: row;
-    /* flex-wrap: nowrap; */
-    /* width: 20%; */
+    flex-wrap: nowrap;
+    width: 20%;
 }
 
 #resistorContainer input {
-    font-size: 1rem;
+    /* font-size: 1rem; */
 }
 
 .radioPieces {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 15px;
     justify-content: space-between;
 }
-
-#but {}
 
 figure {
     display: flex;
     flex-direction: column;
+}
+
+#but {
+    position: absolute;
 }
 
 #calcResult {
@@ -45,7 +50,7 @@ figure {
     height: 50px;
     display: inline-block;
     background-color: rgb(98, 240, 211);
-    padding-block: 0;
+    padding-block: ;
 }
 
 .readingContainer>input {
@@ -56,7 +61,7 @@ figure {
 
 #contact {
     /* align-items: baseline; */
-    width: 50px;
+    width: 40px;
     height: 10px;
     /* position: absolute; */
     background-color: rgb(10, 152, 131);
@@ -64,6 +69,20 @@ figure {
 
 
 /* Diod*/
+
+#diodContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(94, 121, 5);
+    align-items: center;
+}
 
 .rectangle1 {
     width: 50px;
@@ -116,8 +135,8 @@ figure {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     background-color: rgb(94, 121, 5);
     align-items: center;
 }
@@ -196,13 +215,14 @@ figure {
     z-index: 3;
 }
 
-vertLine3 {
+
+/* vertLine3 {
     height: 75px;
     width: 5px;
     background-color: black;
     margin-top: 20px;
     position: absolute;
-}
+} */
 
 #capacitorContact {
     height: 30px;
@@ -224,8 +244,8 @@ vertLine3 {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     background-color: rgb(94, 121, 5);
     align-items: center;
 }
@@ -277,7 +297,6 @@ vertLine3 {
     margin-top: 115px;
     margin-right: 85px;
     box-shadow: 90px 0 0 white;
-    ;
 }
 
 @keyframes ball {
@@ -319,12 +338,13 @@ vertLine3 {
     animation-iteration-count: infinite;
 }
 
-@media only screen and (min-width: 33.938em) {
+@media only screen and (min-width: 30.938em) {
     .radioPieces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
         padding: 10px;
         margin: 20px;
-        grid-gap: 20px;
-        grid-template-columns: 1fr 1fr;
     }
 }
 
