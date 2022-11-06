@@ -88,6 +88,8 @@ let kyrgyzstan = document.getElementById("kg").addEventListener('click', () => {
 // let greece = document.getElementById("greece").addEventListener('click', filter)
 
 function bigPicture(index) {
+    galeryContainer.innerHTML = ""
+    let section = document.createElement("section")
     for (let i = 0; i < photoArray.length; i++) {
         return photoArray[i][index]
     }
@@ -114,7 +116,7 @@ function filter(country = null) {
             a.setAttribute("href", photoArray[i][0])
             a.innerHTML = photoArray[i][2] + "-->Click for HD res";
             img.setAttribute('class', 'galImg')
-            img.setAttribute('width', 400)
+            img.setAttribute('width', 300)
             article.setAttribute('class', 'galery-article')
             figure.appendChild(img)
             figcapture.appendChild(a)

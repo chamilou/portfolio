@@ -69,10 +69,10 @@
                             <input type="text" id="reading4" list="colorList">
                             <input type="text" id="reading5" list="colorList">
                             <input type="text" id="reading6" list="colorList">
-                            <form id="formcalc">
-                                <input id="but" type="submit" value="Calc" onclick="choseColor()">
-                            </form>
                         </div>
+                        <form id="formcalc">
+                            <input id="but" type="submit" value="Calc" onclick="choseColor()">
+                        </form>
                         <datalist id="colorList">
                             <option value="Black"></option>
                             <option value="Brown"></option>
@@ -101,10 +101,11 @@
                     <legend>Transistor</legend>
                     <div id="transistorContainer">
                         <div id=transistorBody>PNP102K</div>
-                        <div id=transistorLegPart1></div>
+                        <div id=transistorLegPart1>C</div>
                         <div id=transistorLegPart2></div>
                         <div id=transistorLegPart3></div>
-                        <div id=transistorLegCenter></div>
+                        <div id=transistorLegCenter>B</div>
+                        <div>E</div>
 
 
                     </div>
@@ -116,19 +117,22 @@
                 <fieldset>
                     <legend>Diod</legend>
                     <div id="diodContainer">
-                        <div class="contact" id="contact"></div>
-                        <div class="rectangle1"></div>
-                        <div class="rectangle2"></div>
-                        <div class="rectangle3"></div>
-                        <div class="rectangle4"></div>
-                        <div class="ball1"></div>
-                        <div class="ball"></div>
-                        <div class="contact" id="contact"></div>
-                    </div>
-                    <figure>
-                        <img src="media/SitePictures/diode.jpeg" alt="type of diodes" width="150">
-                        <figcaption>Credit: https://www.electricaltechnology.org</figcaption>
-                    </figure>
+                        <div class="diodContact">
+                            <<<</div>
+                                <div class="rectangle1">
+                                </div>
+                                <div class="rectangle2">
+                                </div>
+                                <div class="rectangle3"></div>
+                                <div class="rectangle4">
+                                </div>
+                                <div class="ball1"></div>
+                                <div class="ball"></div>
+                        </div>
+                        <figure>
+                            <img src="media/SitePictures/diode.jpeg" alt="type of diodes" width="150">
+                            <figcaption>Credit: https://electricaltechnology.org</figcaption>
+                        </figure>
                 </fieldset>
                 <fieldset>
                     <legend>Capacitor</legend>
@@ -156,14 +160,14 @@
                     </figure>
                 </fieldset>
 
-            </div>
+                </div>
 
         </main>
-    </div>
-    <footer>
-        <p>&copy; All right reserved*2022*</p>
-    </footer>
-    <script src="js/resistor.js"></script>
+        </div>
+        <footer>
+            <p>&copy; All right reserved*2022*</p>
+        </footer>
+        <script src="js/resistor.js"></script>
 </body>
 
 </html>
