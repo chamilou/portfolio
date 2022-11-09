@@ -12,6 +12,10 @@
     cursor: pointer;
 }
 
+figure img {
+    width: 450px;
+}
+
 #photoContainer {
     /* display: flex;
     flex-direction: row;
@@ -35,7 +39,7 @@ section {
     grid-template-columns: 1fr;
 }
 
-@media(min-width:800px) {
+@media(min-width:567px)and (max-width:798px) {
     #countryList {
         display: flex;
     }
@@ -44,5 +48,23 @@ section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
+    }
+    figure img {
+        width: 350px;
+    }
+}
+
+@media(min-width:799px) {
+    #countryList {
+        display: flex;
+    }
+    section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+    }
+    figure img {
+        width: 350px;
     }
 }

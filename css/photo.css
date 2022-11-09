@@ -1,9 +1,18 @@
 #photoSection {
     font-size: 2rem;
-    padding: 5px;
+    padding: 0px;
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
+}
+
+.photoExplain {
+    padding: 20px;
+    text-align: start;
+}
+
+article>h2 {
+    text-shadow: 2px 2px 5px grey;
 }
 
 figcaption {
