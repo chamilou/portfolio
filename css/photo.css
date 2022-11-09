@@ -25,6 +25,7 @@ figure {
 
 figure img {
     margin: 10px;
+    width: 20vw;
 }
 
 @media only screen and (min-width: 30.938em) {
