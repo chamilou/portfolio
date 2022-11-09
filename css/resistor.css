@@ -15,11 +15,9 @@
 
 fieldset {
     display: flex;
-    width: 1vw;
-    /* grid-template-columns: 1fr; */
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 20%;
+    width: 15%;
 }
 
 #resistorContainer input {
@@ -69,17 +67,18 @@ figcupture {
 #contact {
     /* align-items: baseline; */
     width: 35px;
-    margin: 65px 0 0 10px;
+    margin: 65px 0 0 0px;
     height: 10px;
     /* position: absolute; */
     background-color: rgb(10, 152, 131);
-    box-shadow: 20 0 0 rgb(10, 152, 131);
+    box-shadow: 0 0 0 rgb(10, 152, 131);
 }
 
 
 /* Diod*/
 
 #diodContainer {
+    width: 1vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -166,7 +165,7 @@ figcupture {
     width: 110px;
     position: absolute;
     margin-bottom: 95px;
-    height: 45px;
+    height: 52px;
     border: solid 2px black;
     border-radius: 45%;
     background-color: gray;
@@ -178,16 +177,17 @@ figcupture {
 #vertLine1 {
     position: absolute;
     height: 75px;
-    width: 100px;
+    width: 105px;
+    border-radius: 0 0 10px 10px;
     background-color: grey;
     margin-right: 0px;
 }
 
 #oval2 {
-    width: 110px;
+    width: 105px;
     position: absolute;
     margin-top: 48px;
-    height: 45px;
+    height: 50px;
     border: solid 2px black;
     border-radius: 45%;
     background-color: grey;
@@ -234,15 +234,6 @@ figcupture {
     position: absolute;
     z-index: 3;
 }
-
-
-/* vertLine3 {
-    height: 75px;
-    width: 5px;
-    background-color: black;
-    margin-top: 20px;
-    position: absolute;
-} */
 
 #capacitorContact {
     height: 30px;

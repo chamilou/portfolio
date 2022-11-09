@@ -124,30 +124,6 @@ function filterM() {
     }
 }
 
-// let str = ` <header id="mainHeader">
-// <img src="/media/maxresdefault.svg" alt="car" width="70">
-// <h1>My Hobbies</h1>
-// <!--Navigation and Menu-->
-// <nav>
-//     <ul id="menu">
-//         <li><a href="contact.html">Contact</a></li>
-//         <li><a href="test.html">Gallery</a></li>
-//         <li><a href="about.html">About</a></li>
-//         <li><a href="login.html">Login</a></li>
-//         <li><a href="test.html">Test</a></li>
-//     </ul>
-//     <ul>
-//         <div class="toggle">
-//             <label for="checkBox">Menu
-//                 <input type="checkbox" id="checkBox" name="checkBut">
-//             </label>
-//         </div>
-//     </ul>
-// </nav>
-// </header>`
-
-// let navigation = document.getElementById("navig");
-// navigation.innerHTML = str;
-
-
-// // Building the Resistor
+function sendEmail() {
+    window.open('mailto:shamil@idrisov.ch');
+}

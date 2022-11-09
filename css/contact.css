@@ -1,4 +1,98 @@
+.mainContact {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #directContact {
     display: flex;
+    background-color: beige;
     flex-direction: row;
+    gap: 20px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+#directContact>article:nth-child(2) {
+    font-size: 1.5rem;
+}
+
+#directContact>article:nth-child(1) {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#contactMe {
+    /* display: grid; */
+}
+
+fieldset {
+    background-color: beige;
+    /* visibility: hidden; */
+}
+
+#openEmailFace {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+#emailOpener {
+    position: absolute;
+    cursor: pointer;
+    /* opacity: 0; */
+    z-index: 2;
+}
+
+#upperCorner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: px;
+    margin-bottom: px;
+}
+
+form {
+    border: dashed 1px darkblue;
+}
+
+#loverCorner {
+    border-radius: 50%;
+    background-color: crimson;
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#yourEmail {
+    visibility: hidden;
+}
+
+#ccyourself:checked~#yourEmail {
+    visibility: visible;
+}
+
+@media only screen and (min-width:570px) {
+    .mainContact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    fieldset {
+        display: flex;
+        gap: 20px;
+    }
+    .contact-form-ul {
+        width: 70%;
+        display: block;
+        grid-template-columns: 1fr;
+    }
 }

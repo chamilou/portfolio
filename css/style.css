@@ -163,13 +163,11 @@ the closing x only needs 2, coming from the span */
     bottom: 0;
     margin: 0;
     overflow: auto;
-    padding: 3rem;
+    padding: 2rem;
     position: fixed;
     right: -35rem;
     top: 0;
     z-index: 3;
-    width: 0%;
-    /* width: auto; */
     width: 20rem;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -200,11 +198,10 @@ ul {
 }
 
 li {
-    line-height: 1;
-    /* padding: 0 2rem; */
+    /* line-height: 1;
+    padding: 0 2rem; */
     width: 100%;
     border-radius: 10px;
-    ;
 }
 
 nav a {
@@ -214,6 +211,13 @@ nav a {
     margin: 0;
     padding: 0.5em;
     text-decoration: none;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    background-color: #f9ecc1;
+    margin-top: 10%;
 }
 
 

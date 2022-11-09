@@ -6,6 +6,7 @@
     <meta name="keywords" content="keywords">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
     <title>Welcome</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,51 +46,47 @@
         </header>
         <!--Main section-->
         <main>
-            <div class="main-contact">
-                <section id="directContact">
-                    <h2>Contact me</h2>
+            <h2>Contact me</h2>
+            <div class="mainContact">
+                <fieldset>
+                    <legend>Write me</legend>
 
-                    <article>
-
-                        <a href="https://shamilidrisov.netlify.app">My website</a>
-
-                        <a href="mailto:chamilou@gmail.com">Send email</a>
-                    </article>
-                    <article>
-                        Social media contacts: Whatsapp: +41791055569 Telegram:&emsp; +41791055569 My address: Biderstrasse, 44 3006, Bern
-                    </article>
-                </section>
-                <section id="writeMeSection">
-
-                    <form id="contactMe">
-                        <ul class="contact-form-ul">
-
-                            <label for="email"> Email
-
-                            <li> <input type="email" id="email" name="email" placeholder="email@dot.com" required>
-                            </label>
-                            </li>
-                            <li>
-                                <label for="cc">Cc yourself</label>
-                                <input type="checkbox">
-                            </li>
-                            <li><label for="subject">Subject</label></li>
-                            <li>
-                                <input type="text" id="subject" name="textarea" placeholder="Subject" required>
-                            </li>
-                            <li>
-                                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="your message here"></textarea>
-                            </li>
-                        </ul>
-                        <button> Send</button>
-                    </form>
-                </section>
+                    <section id="writeMeSection">
+                        <form id="contactMe">
+                            <ul class="contact-form-ul">
+                                <li>
+                                    <label for="ccyourself">Cc yourself</label>
+                                    <input type="checkbox" id="ccyourself">
+                                    <input type="email" id="yourEmail">
+                                </li>
+                                <li><label for="subject">Subject</label></li>
+                                <li>
+                                    <input type="text" id="subject" name="textarea" placeholder="Subject" required>
+                                </li>
+                                <li>
+                                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="your message here"></textarea>
+                                </li>
+                            </ul>
+                            <button onclick="sendEmail()"> Send</button>
+                        </form>
+                    </section>
+                    <section id="directContact">
+                        <article>
+                            <a href="https://shamilidrisov.netlify.app"> <img src="/media/icons/Website_icon.png" alt="website Image" width="50"></a>
+                        </article>
+                        <article>
+                            <a href="mailto:shamil@idrisov.ch"></a>
+                            <br> Whatsapp/Telegram: +41791055569<br> My address: Biderstrasse, 44 3006, Bern
+                        </article>
+                    </section>
+                </fieldset>
             </div>
         </main>
     </div>
     <footer>
         <p>&copy; All right reserved*2022*</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

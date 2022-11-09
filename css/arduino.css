@@ -1,0 +1,22 @@
+#arduinoPart1 {
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    margin-left: 310px;
+    margin-top: 210px;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+#arduinoParts {
+    /* background-image: url(/media/SitePictures/arduino-pressure-sensor-schematic-768x542.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#arduinoPart1:hover {
+    border: 1px solid red;
+    background-color: blueviolet;
+    color: white;
+    visibility: visible;
+}
